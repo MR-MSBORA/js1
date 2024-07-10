@@ -1,0 +1,139 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: poppins;
+    position: relative;
+}
+body{
+    background-image: url("bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%) ;
+}
+.container{
+
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding:5% 7.5%;
+}
+.text-container{
+    width:40%;
+    color:white;
+    font-size: 16px;
+    padding:2% 4%;
+    text-align: center;
+
+}
+.text-container h1{
+   font-weight: 700;
+   margin:1% 2%;
+   text-align: justify;
+   font-size: 300%;
+   word-spacing: 0px;
+   line-height: 1;
+}
+.text-container p{
+    text-align: left;
+    margin:2% 3%;
+}
+
+/*//////form ///////*/
+.form{
+    width: 35%;
+    display: grid;
+    grid-template-columns: 100%;
+    margin: auto;
+    text-align: justify;
+}
+.trial{
+    font-size: 14px;
+    background-color:  rgba(51, 14, 186, 0.815);
+    color:white;
+    font-weight: 600;
+    width:95%;
+    padding:3% 8%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow:0px 8px rgba(92, 90, 90, 0.443);
+}
+span{
+    color:rgb(193, 191, 191);
+}
+.form-container{
+    width: 100%;
+    margin-top:10%;
+    padding:8% 6%;
+    border:2px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:0px 5px rgba(63, 62, 62, 0.411);
+}
+
+.form-container input{
+   width: 96%;
+   color:rgba(155, 155, 155, 0.756);
+   padding:2% 2%;
+   border:2px solid rgba(0, 0, 0, 0.393);
+   border-radius: 8px;
+}
+.claim-button{
+    margin-top:5%;
+    width: 100%;
+    padding:2% 3px;
+    text-align: center;
+    background-color: rgb(75, 184, 75);
+    border:none;
+    border-radius:8px;
+    box-shadow:0px 5px green;
+    margin-bottom:4%;
+    cursor: pointer;
+}
+.claim-button:hover{
+    background-color: rgba(75, 184, 75, 0.737);
+    box-shadow:0px 5px rgba(0, 128, 0, 0.616);
+}
+.term-condition{
+    color:grey;
+    font-size: 10px;
+    text-align: center;
+}
+.term-condition span{
+    color:tomato;
+}
+
+.error-message1,.error-message2,.error-message3,.error-message4{
+    font-size: 12px;
+    margin:2% 3%;
+    text-align: right;
+    color:rgb(255, 6, 6);
+    font-weight: 600;
+}
+
+
+
+/* ADJUSTMENT FOR MOBILE DESPLAY*/
+@media screen and (max-width:620px)
+{
+    .container{
+        flex-direction: column;
+    }
+    .text-container{
+        width: 60%;
+        margin-bottom: 25%;
+    }
+    .text-container h1{
+         font-size: 35px;;
+         line-height: 1;
+         word-spacing: 0%;
+    }
+    .text-container p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .form{
+        width:60%;
+    }
+}
